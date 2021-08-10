@@ -1,0 +1,10 @@
+
+*.txt
+*.json
+*.pt5
+notebook/.ipynb_checkpoints/dataloader-checkpoint.ipynb
+notebook/.ipynb_checkpoints/dataloader-CNN-checkpoint.ipynb
+notebook/dataloader.ipynb
+notebook/dataloader.ipynb
+*.npy
+*.pkl
