@@ -8,3 +8,4 @@ notebook/dataloader.ipynb
 notebook/dataloader.ipynb
 *.npy
 *.pkl
+model/seq2seq_v2.pt
