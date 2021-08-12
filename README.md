@@ -26,3 +26,10 @@ Technical details:
   - Create pipelines for the seq2seq model
 
 - Implemented Teacher Forcing for RNN from scratch
+
+Highlight:
+- Gradient Clipping saved us from vanishing/exploding gradient problem
+
+Potential improvement:
+- Add attention layers                          
+- Implement dense video captioning
