@@ -20,9 +20,8 @@ CNN architectures are used for visual encoding and RNN structures are used for d
 
 | Video | Text (Greedy)|
 |-------|----------|
-|![](sample/F2Ny7rq9RKs_139_148.avi.gif?raw=true)|“a person is adding ingredients into a bowl”
-|
-|![](sample/r2oI9Y-3wAo_21_28.avi.gif?raw=true)|“a panda bears is climbing up a bench”|
+| ![](sample/F2Ny7rq9RKs_139_148.avi.gif?raw=true) | “a person is adding ingredients into a bowl”|
+| ![](sample/r2oI9Y-3wAo_21_28.avi.gif?raw=true) | “a panda bears is climbing up a bench” |
 
 ## Other technical details
 
