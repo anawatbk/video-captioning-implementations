@@ -1,35 +1,46 @@
-# video-captioning-implementations
+# Video-Captioning-Implementations
+Automatically generate natural language sentence based on the content of the short video clips.
 
-Goal：
+## Goal
+- Understand Encoder-Decoder architecture.
+- Use the architecture in the paper as a reference to reproduce our own version in PyTorch.
 
-- Use the architecture in the paper as a reference to reproduce our own version
+## Model
+Developed 2 CNN-RNN architectures for video caption generator.
+CNN architectures are used for visual encoding and RNN structures are used for decoding.
+1. Fixed Representational Context
 
-- Understand the model framework, e.g. Encoder-Decoder, seq2seq
+![](sample/model1.png?raw=true)
 
-- Build various architectures and compare the result
+2. Sequence to Sequence
 
-Methods attempted：Two CNN - RNN Architecture
+![](sample/model2.png?raw=true)
 
-- CNN architectures are used for visual encoding
-- RNN structures are used for decoding
+## Sample result on testing data
 
-Technical details:
+| Video | Text (Greedy)|
+|-------|----------|
+|![](sample/F2Ny7rq9RKs_139_148.avi.gif?raw=true)|“a person is adding ingredients into a bowl”
+|
+|![](sample/r2oI9Y-3wAo_21_28.avi.gif?raw=true)|“a panda bears is climbing up a bench”|
 
-- Generated visual encoding vectors from each video using resnet50/VGG16
-  - Reduce training time
-  - Extract high-level features
+## Other technical details
 
-- Used google-news word2vec for language encoding
+- Generated visual encoding vectors from each video using resnet50 or VGG16
 
-- Implemented encoder and decoder from scratch
-  - Figure out the variable size in each neural network layer
-  - Create pipelines for the seq2seq model
+- Used google-news-300 word2vec for language encoding
 
-- Implemented Teacher Forcing for RNN from scratch
+- Used Teacher Forcing Ratio for training RNN
 
-Highlight:
-- Gradient Clipping saved us from vanishing/exploding gradient problem
 
-Potential improvement:
+
+## Future Development
 - Add attention layers                          
 - Implement dense video captioning
+- Beam search for text generation
+- Add BLEU Score
+
+## References
+S. Venugopalan et al. 2015. Sequence to Sequence - Video to text. In IEEE ICCV<br>
+S. Venugopalan et al. 2014. Translating videos to natural language using deep recurrent neural networks. arXiv preprint arXiv:1412.4729.<br>
+Neyyer Aafaq et al. 2020. Video Description: A Survey of Methods, Datasets and Evaluation Metrics. arXiv preprint arXiv:1806.00186v4.
