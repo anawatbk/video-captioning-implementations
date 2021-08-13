@@ -42,4 +42,7 @@ CNN architectures are used for visual encoding and RNN structures are used for d
 ## References
 S. Venugopalan et al. 2015. Sequence to Sequence - Video to text. In IEEE ICCV<br>
 S. Venugopalan et al. 2014. Translating videos to natural language using deep recurrent neural networks. arXiv preprint arXiv:1412.4729.<br>
-Neyyer Aafaq et al. 2020. Video Description: A Survey of Methods, Datasets and Evaluation Metrics. arXiv preprint arXiv:1806.00186v4.
+Neyyer Aafaq et al. 2020. Video Description: A Survey of Methods, Datasets and Evaluation Metrics. arXiv preprint arXiv:1806.00186v4.<br>
+D. L. Chen and W. B. Dolan. Collecting highly parallel data for 4
+paraphrase evaluation. 2011. In Proceedings of ACL, pages 190–200.<br>
+Jun Xu, Tao Mei, Ting Yao and Yong Rui. 2016. MSR-VTT: A Large Video Description Dataset for Bridging Video and Language. In CVPR 2016.
